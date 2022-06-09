@@ -6,91 +6,177 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YT-Clone</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="src/styles/style.css">
 </head>
 
 <body>
   <header class="header">
-    <a href="#" class="header__logo">Youtube</a>
+    <a href="#" class="header__logo"><span class="header__logo-icon"><i class="fa-brands fa-youtube"></i></span>
+      Youtube</a>
     <div class="header__search">
-      <input type="text" placeholder="Search">
-      <a href="#" class="header__search">Lupa</a>
-      <a href="#" class="header__search">Microphone</a>
+      <input class="header__search-input" type="text" placeholder="Search">
+      <a href="#" title="search" class="header__button-search"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href="#" title="search with your voice" class="header__voice-search"><i class="fa-solid fa-microphone"></i></a>
     </div>
     <nav class="header__nav">
-      <a href="#" class="header__create-video">create</a>
-      <a href="#" class="header__yt-apps">yt-apps</a>
-      <a href="#" class="header__notifications">notifications</a>
-      <a href="#" class="header__notifications">
-        <img src="#" alt="profile picture">
-        profile</a>
+      <a href="#" title="Create" class="header__create-video"><i class="fa-solid fa-video"></i></a>
+      <a href="#" title="Youtube Apps" class="header__yt-apps"><i class="fa-solid fa-grip"></i></a>
+      <a href="#" title="Notifications" class="header__notifications"><i class="fa-solid fa-bell"></i></a>
+      <a href="#" title="User" class="header__user-profile"><i class="fa-solid fa-user"></i></a>
     </nav>
   </header>
   <main class="main">
     <aside class="main__aside">
       <nav class="main__navigation">
-        <div class="main__navigation-main">
-          <a href="#" class="main__navigation-link">icon Home</a>
-          <a href="#" class="main__navigation-link">icon Home</a>
-          <a href="#" class="main__navigation-link">icon Home</a>
-          <a href="#" class="main__navigation-link">icon Home</a>
-        </div>
-        <div class="main__navigation-videos">
-          <a href="#" class="main__navigation-link">icon Home</a>
-          <a href="#" class="main__navigation-link">icon Home</a>
-          <a href="#" class="main__navigation-link">icon Home</a>
-          <a href="#" class="main__navigation-link">icon Home</a>
-          <a href="#" class="main__navigation-link">icon Home</a>
-        </div>
-        <div class="main__navigation-subscriptions">
-          <a href="#" class="main__navigation-link">icon Home</a>
-          <a href="#" class="main__navigation-link">icon Home</a>
-          <a href="#" class="main__navigation-link">icon Home</a>
-          <a href="#" class="main__navigation-link">icon Home</a>
-          <a href="#" class="main__navigation-link">icon Home</a>
-        </div>
-        <div class="main__navigation-more">
-          <a href="#" class="main__navigation-link">icon Home</a>
-          <a href="#" class="main__navigation-link">icon Home</a>
-          <a href="#" class="main__navigation-link">icon Home</a>
-          <a href="#" class="main__navigation-link">icon Home</a>
-          <a href="#" class="main__navigation-link">icon Home</a>
-        </div>
-        <div class="main__navigation-settings">
-          <a href="#" class="main__navigation-link">icon Home</a>
-          <a href="#" class="main__navigation-link">icon Home</a>
-          <a href="#" class="main__navigation-link">icon Home</a>
-          <a href="#" class="main__navigation-link">icon Home</a>
-          <a href="#" class="main__navigation-link">icon Home</a>
-        </div>
-        <div class="main__navigation-footer">
-          <a href="#" class="main__navigation-link">icon Home</a>
-          <a href="#" class="main__navigation-link">icon Home</a>
-          <a href="#" class="main__navigation-link">icon Home</a>
-          <a href="#" class="main__navigation-link">icon Home</a>
-          <a href="#" class="main__navigation-link">icon Home</a>
-        </div>
+        <a href="#" title="Home" class="main__navigation-link"> <span class="main__navigation-icon"> <i
+              class="fa-solid fa-house"></i> </span> Home</a>
+        <a href="#" title="Explore" class="main__navigation-link"> <span class="main__navigation-icon"> <i
+              class="fa-solid fa-compass"></i> </span> Explore</a>
+        <a href="#" title="Shorts" class="main__navigation-link"> <span class="main__navigation-icon"> <i
+              class="fa-solid fa-circle-play"></i> </span> Shorts</a>
+        <a href="#" title="Subscriptions" class="main__navigation-link"> <span class="main__navigation-icon"> <i
+              class="fa-solid fa-id-card"></i> </span> Subscriptions</a>
+        <a href="#" title="Library" class="main__navigation-link"> <span class="main__navigation-icon"> <i
+              class="fa-solid fa-folder-open"></i> </span> Library</a>
       </nav>
     </aside>
     <section class="videos">
       <div class="videos__categories">
-        <a href="#" class="videos__categorie">All</a>
-        <a href="#" class="videos__categorie">All</a>
-        <a href="#" class="videos__categorie">All</a>
-        <a href="#" class="videos__categorie">All</a>
-        <a href="#" class="videos__categorie">All</a>
-        <a href="#" class="videos__categorie">All</a>
-        <a href="#" class="videos__categorie">All</a>
+        <a href="#" title="All" class="videos__categorie videos__categorie--active ">All</a>
+        <a href="#" title="New" class="videos__categorie">New for you</a>
+        <a href="#" title="Gaming" class="videos__categorie">Gaming</a>
+        <a href="#" title="Music" class="videos__categorie">Music</a>
+        <a href="#" title="Comedies" class="videos__categorie">Comedies</a>
+        <a href="#" title="Linux" class="videos__categorie">Linux</a>
+        <a href="#" title="Laptops" class="videos__categorie">Laptops</a>
       </div>
       <div class="videos__grid">
-        <img src="" alt="video picture">
-        <p class="videos__title"></p>
+        <div class="video">
+          <div class="video__miniature">
+            <a href="#"><img class="video__preview" src="./src/img/video_preview.jpg" alt="video picture"></a>
+          </div>
+          <div class="video__data">
+            <div class="video__creator">
+              <a href="#"><img class="video__user-picture" src="./src/img/user_pic.jpg" alt="video creator"></a>
+            </div>
+            <div class="video__info">
+              <a href="#" class="video__title">Lorem ipsum</a>
+              <a href="#" class="video__creator-name">Ipsum Lorem</a>
+              <p class="video__views-date">404 views - 1 hour ago</p>
+            </div>
+          </div>
+        </div> <!-- Video -->
+        <div class="video">
+          <div class="video__miniature">
+            <a href="#"><img class="video__preview" src="./src/img/video_preview.jpg" alt="video picture"></a>
+          </div>
+          <div class="video__data">
+            <div class="video__creator">
+              <a href="#"><img class="video__user-picture" src="./src/img/user_pic.jpg" alt="video creator"></a>
+            </div>
+            <div class="video__info">
+              <a href="#" class="video__title">Lorem ipsum</a>
+              <a href="#" class="video__creator-name">Ipsum Lorem</a>
+              <p class="video__views-date">404 views - 1 hour ago</p>
+            </div>
+          </div>
+        </div> <!-- Video -->
+        <div class="video">
+          <div class="video__miniature">
+            <a href="#"><img class="video__preview" src="./src/img/video_preview.jpg" alt="video picture"></a>
+          </div>
+          <div class="video__data">
+            <div class="video__creator">
+              <a href="#"><img class="video__user-picture" src="./src/img/user_pic.jpg" alt="video creator"></a>
+            </div>
+            <div class="video__info">
+              <a href="#" class="video__title">Lorem ipsum</a>
+              <a href="#" class="video__creator-name">Ipsum Lorem</a>
+              <p class="video__views-date">404 views - 1 hour ago</p>
+            </div>
+          </div>
+        </div> <!-- Video -->
+        <div class="video">
+          <div class="video__miniature">
+            <a href="#"><img class="video__preview" src="./src/img/video_preview.jpg" alt="video picture"></a>
+          </div>
+          <div class="video__data">
+            <div class="video__creator">
+              <a href="#"><img class="video__user-picture" src="./src/img/user_pic.jpg" alt="video creator"></a>
+            </div>
+            <div class="video__info">
+              <a href="#" class="video__title">Lorem ipsum</a>
+              <a href="#" class="video__creator-name">Ipsum Lorem</a>
+              <p class="video__views-date">404 views - 1 hour ago</p>
+            </div>
+          </div>
+        </div> <!-- Video -->
+        <div class="video">
+          <div class="video__miniature">
+            <a href="#"><img class="video__preview" src="./src/img/video_preview.jpg" alt="video picture"></a>
+          </div>
+          <div class="video__data">
+            <div class="video__creator">
+              <a href="#"><img class="video__user-picture" src="./src/img/user_pic.jpg" alt="video creator"></a>
+            </div>
+            <div class="video__info">
+              <a href="#" class="video__title">Lorem ipsum</a>
+              <a href="#" class="video__creator-name">Ipsum Lorem</a>
+              <p class="video__views-date">404 views - 1 hour ago</p>
+            </div>
+          </div>
+        </div> <!-- Video -->
+        <div class="video">
+          <div class="video__miniature">
+            <a href="#"><img class="video__preview" src="./src/img/video_preview.jpg" alt="video picture"></a>
+          </div>
+          <div class="video__data">
+            <div class="video__creator">
+              <a href="#"><img class="video__user-picture" src="./src/img/user_pic.jpg" alt="video creator"></a>
+            </div>
+            <div class="video__info">
+              <a href="#" class="video__title">Lorem ipsum</a>
+              <a href="#" class="video__creator-name">Ipsum Lorem</a>
+              <p class="video__views-date">404 views - 1 hour ago</p>
+            </div>
+          </div>
+        </div> <!-- Video -->
+        <div class="video">
+          <div class="video__miniature">
+            <a href="#"><img class="video__preview" src="./src/img/video_preview.jpg" alt="video picture"></a>
+          </div>
+          <div class="video__data">
+            <div class="video__creator">
+              <a href="#"><img class="video__user-picture" src="./src/img/user_pic.jpg" alt="video creator"></a>
+            </div>
+            <div class="video__info">
+              <a href="#" class="video__title">Lorem ipsum</a>
+              <a href="#" class="video__creator-name">Ipsum Lorem</a>
+              <p class="video__views-date">404 views - 1 hour ago</p>
+            </div>
+          </div>
+        </div> <!-- Video -->
+        <div class="video">
+          <div class="video__miniature">
+            <a href="#"><img class="video__preview" src="./src/img/video_preview.jpg" alt="video picture"></a>
+          </div>
+          <div class="video__data">
+            <div class="video__creator">
+              <a href="#"><img class="video__user-picture" src="./src/img/user_pic.jpg" alt="video creator"></a>
+            </div>
+            <div class="video__info">
+              <a href="#" class="video__title">Lorem ipsum</a>
+              <a href="#" class="video__creator-name">Ipsum Lorem</a>
+              <p class="video__views-date">404 views - 1 hour ago</p>
+            </div>
+          </div>
+        </div> <!-- Video -->
       </div>
     </section>
   </main>
-  <footer class="footer">
-
-  </footer>
 </body>
 
 </html>
